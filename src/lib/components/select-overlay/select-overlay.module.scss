@@ -1,0 +1,68 @@
+.selectOverlay {
+  // border: solid 2px #cc7429;
+  // background-color: rgba(255, 203, 51, 0.05);
+  position: absolute;
+  cursor: pointer;
+  border-radius: 5px;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+  .move {
+    pointer-events: all;
+    font-size: 26px;
+    cursor: move;
+  }
+  .btnClose {
+    width: 16px;
+    height: 16px;
+    pointer-events: all;
+    position: absolute;
+    // background-color: rgb(240, 90, 90);
+    // border: solid 2px #cc7429;
+    font-size: 14px;
+    color: white;
+    right: -8px;
+    top: -8px;
+    border-radius: 50%;
+    z-index: 5000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 100ms ease-in;
+    &:hover {
+      transform: scale(1.2);
+    }
+    svg {
+      color: white;
+    }
+  }
+
+  .resizeTop {
+    position: absolute;
+    top: -4px;
+    height: 6px;
+    border-radius: 10px;
+    cursor: row-resize;
+    width: 50px;
+    pointer-events: all;
+    transition: transform 100ms ease-in;
+  }
+
+  .resizeBottom {
+    position: absolute;
+    bottom: -4px;
+    height: 6px;
+    border-radius: 10px;
+    cursor: row-resize;
+    width: 50px;
+    pointer-events: all;
+  }
+}

@@ -1,0 +1,24 @@
+.appTableContainer {
+  .table {
+    width: 100%;
+    background-color: #fdfdfd;
+    border: solid 1px #f5f6f7;
+    position: relative;
+    overflow-x: auto;
+    height: 1000px;
+  }
+
+  .scroll::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  .scroll::-webkit-scrollbar-track {
+    background: rgb(233, 233, 233);
+  }
+
+  .scroll::-webkit-scrollbar-thumb {
+    background-color: rgb(187, 187, 187);
+    border-radius: 20px;
+  }
+}
